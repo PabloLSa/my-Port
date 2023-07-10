@@ -9,7 +9,7 @@ function Header() {
   const theme = useContext(ThemeContext);
 
   const [themeClasses, setThemeClasses] = useState(
-    'bg-gradient-to-r from-blue-500 to-blue-700 text-transparent bg-clip-text text-xl sm:text-4xl font-bold text-center'
+    'bg-gradient-to-r from-blue-500 to-blue-700 text-transparent bg-clip-text text-3xl sm:text-4xl font-bold text-center'
   );
   const [bgHeader, setBgHeader] = useState(
     'bg-stone-950 flex flex-col justify-center items-center py-5 w-full'
@@ -26,8 +26,8 @@ function Header() {
   useEffect(() => {
     setThemeClasses(
       theme.color === 'light'
-        ? 'text-blue-500 text-xl sm:text-4xl font-bold text-center'
-        : 'bg-gradient-to-r from-blue-500 to-blue-700 text-transparent bg-clip-text text-xl sm:text-4xl font-bold text-center'
+        ? 'text-blue-500 text-3xl sm:text-4xl font-bold text-center'
+        : 'bg-gradient-to-r from-blue-500 to-blue-700 text-transparent bg-clip-text text-3xl sm:text-4xl font-bold text-center'
     );
   }, [theme.color]);
 
