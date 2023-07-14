@@ -60,11 +60,11 @@ function About() {
               </a>
               
             </div>
-            <div className="flex mt-4">
+            {/* <div className="flex mt-4">
               <a href="#sobre-mim" className="mb-3 font-sans text-lg text-black hover:text-blue-500" rel="noopener noreferrer">
                 <FaReact className="mr-2" />
               </a>
-            </div>
+            </div> */}
           </div>
           <div className="flex flex-col items-center justify-between w-full sm:w-3/4 h-96">
             <div className='flex flex-col items-center w-full'>
@@ -73,7 +73,7 @@ function About() {
                   Desenvolvedor Full Stack
                 </span>
               </div>
-              <span className={`font-sans text-2xl font-bold ${themeText}`}>
+              <span className={`font-sans text-xl sm:text-2xl font-bold ${themeText}`}>
                 Campinas, São Paulo
               </span>
             </div>
