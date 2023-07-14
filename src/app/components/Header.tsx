@@ -26,12 +26,12 @@ function Header() {
     );
     setlLigth(
       theme.color === 'light'
-        ? 'text-purple-600'
-        : 'text-white hover:text-purple-600' 
+        ? 'text-blue-700'
+        : 'text-white' 
     );
     setThemeClasses(
       theme.color === 'light'
-        ? 'text-blue-800'
+        ? 'text-blue-700'
         : 'text-white' 
     );
   }, [theme.color]);
@@ -42,7 +42,7 @@ function Header() {
         <h1
           className={`text-3xl sm:text-4xl font-bold text-center font-sans ${themeClasses}`}
           style={{
-            boxShadow: '0px 0px 10px rgba(0, 191, 255, 0.5)',
+            boxShadow: '0px 0px 10px rgba(137, 71, 205, 0.5)',
             padding: '0.3em',
             borderRadius: '0.5em',
             whiteSpace: 'nowrap'
@@ -71,7 +71,7 @@ function Header() {
           </a>
         </span>
         <div className="flex items-center mt-2 ml-5">
-          <span className={`flex items-center mx-6 ml-4 text-3xl ${ligth} hover:text-blue-800`}>
+          <span className={`flex items-center mx-6 ml-4 text-3xl ${ligth} hover:text-purple-600`}>
             <button onClick={() => theme.toogleTheme()}>
               {theme.color === 'dark' ? <MdOutlineFlashlightOff /> : <MdOutlineFlashlightOn />}
             </button>
