@@ -1,7 +1,7 @@
 import Header from './components/Header'
 // import TestAbout from './components/TestAbout'
  import About from './components/About'
-// import Footer from './components/Footer'
+ import Footer from './components/Footer'
 
 
 export default function Home() {
@@ -9,7 +9,7 @@ export default function Home() {
     <>
       <Header /> 
       <About /> 
-      {/* <Footer /> */}
+       <Footer /> 
 
     </>
 
