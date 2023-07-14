@@ -1,4 +1,5 @@
 import './globals.css'
+import './fonts.css'
 import { Inter } from 'next/font/google'
 import ThemeProviderContext from './context/ThemeProviderContext';
 

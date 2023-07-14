@@ -2,3 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer components {
+  .border-about {
+    @apply px-2 py-1 ml-2 font-sans text-xl font-bold text-transparent border-purple-500 hover:border rounded-xl bg-gradient-to-br from-blue-500 to-purple-500 bg-clip-text hover:text-blue-700;
+  }
+  
+
+  
+
+}

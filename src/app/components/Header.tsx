@@ -9,33 +9,38 @@ function Header() {
   const theme = useContext(ThemeContext);
 
   const [themeClasses, setThemeClasses] = useState(
-    'bg-gradient-to-r from-blue-500 to-blue-700 text-transparent bg-clip-text text-3xl sm:text-4xl font-bold text-center'
+    'text-gray-800 font-sans font-bold text-center sm:text-4xl'
   );
   const [bgHeader, setBgHeader] = useState(
-    'bg-stone-950 flex flex-col justify-center items-center py-5 w-full'
+    'bg-zinc-900 flex flex-col justify-center items-center py-5 w-full'
+  );
+  const [ligth, setlLigth] = useState(
+    'bg-zinc-900 flex flex-col justify-center items-center py-5 w-full'
   );
 
   useEffect(() => {
     setBgHeader(
       theme.color === 'light'
-        ? 'bg-gray-800 opacity-90 flex flex-col justify-center py-5 items-center w-full'
-        : 'bg-stone-950 flex flex-col justify-center items-center py-5 w-full'
+        ? 'bg-gray-200'
+        : 'bg-zinc-900' 
     );
-  }, [theme.color]);
-
-  useEffect(() => {
+    setlLigth(
+      theme.color === 'light'
+        ? 'text-purple-500'
+        : 'text-white hover:text-purple-500' 
+    );
     setThemeClasses(
       theme.color === 'light'
-        ? 'text-blue-500 text-3xl sm:text-4xl font-bold text-center'
-        : 'bg-gradient-to-r from-blue-500 to-blue-700 text-transparent bg-clip-text text-3xl sm:text-4xl font-bold text-center'
+        ? 'text-blue-800'
+        : 'text-white' 
     );
   }, [theme.color]);
 
   return (
-    <header className={bgHeader}>
+    <header className={`flex flex-col justify-center py-5 items-center w-full ${bgHeader}`}>
       <div className="flex flex-col items-center justify-center w-full px-4 sm:flex-row">
         <h1
-          className={themeClasses}
+          className={`text-3xl sm:text-4xl font-bold text-center font-sans ${themeClasses}`}
           style={{
             boxShadow: '0px 0px 10px rgba(0, 191, 255, 0.5)',
             padding: '0.3em',
@@ -45,20 +50,14 @@ function Header() {
         >
           Pablo Landim de Sá
         </h1>
-        <div className="flex items-center mt-2">
-          <span className="flex items-center mx-6 ml-4 text-xl text-white hover:text-blue-500">
-            <button onClick={() => theme.toogleTheme()}>
-              {theme.color === 'dark' ? <MdOutlineFlashlightOff /> : <MdOutlineFlashlightOn />}
-            </button>
-          </span>
-        </div>
-        <span className="flex items-center mt-2 mr-4 text-xl text-transparent bg-gradient-to-r from-blue-500 to-purple-500 bg-clip-text">
-          <a>Conecte-se</a>
+       
+        <span className="flex items-center mt-2 ml-4 mr-1 font-sans text-xl font-bold border-purple-500 hover:border rounded-xl">
+          <span className='ml-2 text-transparent bg-gradient-to-br from-[#4158D0] via-[#C850C0] via-46% to-purple-500 bg-clip-text'>Conecte-se</span>
           <a
             href="https://www.linkedin.com/in/pablolandimdesadev/"
             target="_blank"
             rel="noreferrer"
-            className="mx-2 text-xl text-white hover:text-blue-600"
+            className="mx-2 text-xl text-purple-600 hover:text-blue-600"
           >
             <BsLinkedin />
           </a>
@@ -66,11 +65,18 @@ function Header() {
             href="https://github.com/PabloLSa"
             target="_blank"
             rel="noreferrer"
-            className="mx-2 text-xl text-white hover:text-zinc-600"
+            className="mx-2 text-xl text-purple-600 hover:text-gray-600"
           >
             <BsGithub />
           </a>
         </span>
+        <div className="flex items-center mt-2 ml-5">
+          <span className={`flex items-center mx-6 ml-4 text-3xl ${ligth} hover:text-blue-700`}>
+            <button onClick={() => theme.toogleTheme()}>
+              {theme.color === 'dark' ? <MdOutlineFlashlightOff /> : <MdOutlineFlashlightOn />}
+            </button>
+          </span>
+        </div>
       </div>
     </header>
   );
