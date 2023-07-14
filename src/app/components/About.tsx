@@ -55,7 +55,7 @@ function About() {
               <a href="https://github.com/PabloLSa/curriculo/blob/main/CV-Front-end.pdf">
           <span className="ml-3 inline-block w-4 h-4 bg-gradient-to-br from-[#4158D0] via-[#C850C0] via-46% to-[#FFCC70] rounded-full"></span>
               <span className="border-about">
-                CV
+                Veja meu currículo
               </span>
               </a>
               
