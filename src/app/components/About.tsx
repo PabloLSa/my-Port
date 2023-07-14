@@ -19,12 +19,12 @@ function About() {
     );
     setThemeText(
       theme.color === 'light'
-        ? 'bg-gradient-to-r from-blue-500 to-blue-700 text-transparent bg-clip-text'
+        ? 'bg-gradient-to-br from-blue-600 to-blue-950 text-transparent bg-clip-text'
         : 'text-transparent bg-gradient-to-br from-[#4158D0] via-[#C850C0] via-46% to-purple-500 bg-clip-text'
     );
     setThemeAbout(
       theme.color === 'light'
-        ? 'text-gray-800'
+        ? 'text-blue-800'
         : 'text-white'
     );
   }, [theme.color]);
@@ -69,20 +69,20 @@ function About() {
           <div className="flex flex-col items-center justify-between w-full sm:w-3/4 h-96">
             <div className='flex flex-col items-center w-full'>
               <div className='flex justify-center'>
-                <span className={`font-sans font-bold text-xl sm:text-4xl ${themeText}`}>
+                <span className={`font-sans font-bold text-xl sm:text-5xl ${themeText}`}>
                   Desenvolvedor Full Stack
                 </span>
               </div>
-              <span className={`font-sans text-xl sm:text-2xl font-bold ${themeText}`}>
+              <span className={`font-sans text-xl sm:text-3xl font-bold ${themeText}`}>
                 Campinas, São Paulo
               </span>
             </div>
             <div className='flex items-center justify-center h-full'>
-            <p className={`font-sans font-bold text-xl sm:text-xl text-center ${themeAbout}`}>     
-              Olá, sou um desenvolvedor web com foco nas tecnologias React, Tailwind, Next.js e conexão com o GitHub! 
-              Em agosto de 2022, decidi fazer uma transição de carreira e para atuar como desenvolvedor full-stack,
-              ingressei na Trybe, uma escola de tecnologia.  
-              Estou trilhando o caminho para me tornar um desenvolvedor full-stack!
+            <p className={`font-sans font-bold text-xl sm:text-2xl text-center ${themeAbout}`}>     
+              Sou um desenvolvedor web com foco nas tecnologias React, Tailwind, Next.js e conexão com o GitHub! 
+              Em agosto de 2022, decidi fazer uma transição de carreira e ingressei na Trybe, uma escola de tecnologia, para me tornar
+              um desenvolvedor Full Stack.
+              Estou trilhando para alcançar esse objetivo!
             </p>
             </div>
             <div className='flex flex-col items-center'>
@@ -90,7 +90,7 @@ function About() {
               Tecnologias Relevantes
             </span>
             <div className='flex gap-2'>
-            <a href="#sobre-mim" className="mb-3 font-sans text-lg text-blue-600 hover:text-blue-500" rel="noopener noreferrer">
+            <a href="https://react.dev/" className="mb-3 font-sans text-lg text-blue-600 hover:text-blue-500">
               <FaReact className="mr-2" />
             </a>
             <a href="#sobre-mim" className="mb-3 font-sans text-lg text-blue-600 hover:text-blue-400 " rel="noopener noreferrer">

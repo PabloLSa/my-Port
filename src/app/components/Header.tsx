@@ -9,13 +9,13 @@ function Header() {
   const theme = useContext(ThemeContext);
 
   const [themeClasses, setThemeClasses] = useState(
-    'text-gray-800 font-sans font-bold text-center sm:text-4xl'
+    'text-white font-sans font-bold text-center sm:text-4xl'
   );
   const [bgHeader, setBgHeader] = useState(
     'bg-zinc-900 flex flex-col justify-center items-center py-5 w-full'
   );
   const [ligth, setlLigth] = useState(
-    'bg-zinc-900 flex flex-col justify-center items-center py-5 w-full'
+    'text-white hover:text-purple-700'
   );
 
   useEffect(() => {
@@ -26,8 +26,8 @@ function Header() {
     );
     setlLigth(
       theme.color === 'light'
-        ? 'text-purple-500'
-        : 'text-white hover:text-purple-500' 
+        ? 'text-purple-600'
+        : 'text-white hover:text-purple-600' 
     );
     setThemeClasses(
       theme.color === 'light'
@@ -71,7 +71,7 @@ function Header() {
           </a>
         </span>
         <div className="flex items-center mt-2 ml-5">
-          <span className={`flex items-center mx-6 ml-4 text-3xl ${ligth} hover:text-blue-700`}>
+          <span className={`flex items-center mx-6 ml-4 text-3xl ${ligth} hover:text-blue-800`}>
             <button onClick={() => theme.toogleTheme()}>
               {theme.color === 'dark' ? <MdOutlineFlashlightOff /> : <MdOutlineFlashlightOn />}
             </button>
