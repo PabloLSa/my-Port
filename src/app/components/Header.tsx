@@ -21,7 +21,7 @@ function Header() {
   useEffect(() => {
     setBgHeader(
       theme.color === 'light'
-        ? 'bg-gray-200'
+        ? 'bg-gradient-to-tl from-green-300 via-green-200 via-80% to-green-100'
         : 'bg-zinc-900' 
     );
     setlLigth(

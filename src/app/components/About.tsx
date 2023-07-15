@@ -14,7 +14,7 @@ function About() {
   useEffect(() => {
     setThemeClasses(
       theme.color === 'light'
-        ? 'bg-stone-650'
+        ? 'bg-gradient-to-tr from-green-100 via-green-200 via-85% to-green-300'
         : 'bg-gradient-to-br from-zinc-900 to-zinc-800'
     );
     setThemeText(
@@ -72,13 +72,13 @@ function About() {
             <div className='flex items-center justify-center h-full'>
               <p className={`font-sans font-bold text-xl sm:text-2xl text-center ${themeAbout}`}>     
                 Sou um desenvolvedor web com foco nas tecnologias React, Tailwind, Next.js e conexão com o GitHub! 
-                Em agosto de 2022, decidi fazer uma transição de carreira e ingressei na Trybe, uma escola de tecnologia, para me tornar
+                Em agosto de 2022, decidi fazer uma transição de carreira e ingressei na Trybe, uma escola de tecnologia, onde me tornei
                 um desenvolvedor Full Stack.
                 Estou trilhando para alcançar esse objetivo!
               </p>
             </div>
             <div className='flex flex-col items-center'>
-              <span className="mr-4 font-sans text-2xl text-transparent bg-gradient-to-br from-[#4158D0] via-[#C850C0] via-46% to-purple-500 bg-clip-text sm:text-xl">
+              <span className={`mr-4 font-sans font-bold text-2xl ${themeText} sm:text-xl`}>
                 Tecnologias Relevantes
               </span>
               <div className='flex gap-2'>
