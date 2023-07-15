@@ -44,15 +44,15 @@ function About() {
               />
             </div>
             <div className="flex flex-col items-start gap-2">
-              <a href="/contato" target="_blank" className="flex items-center gap-2 hover:text-blue-500">
+              <a href="/contato" target="_blank" className="span-contact">
                 <span className="w-4 h-4 bg-gradient-to-br from-[#4158D0] via-[#C850C0] via-46% to-[#FFCC70] rounded-full"></span>
                 <span className="border-about">Contato</span>
               </a>
-              <a href="/projetos" target="_blank" className="flex items-center gap-2 hover:text-blue-500">
-                <span className="w-4 h-4 bg-gradient-to-br from-[#4158D0] via-[#C850C0] via-46% to-[#FFCC70] rounded-full"></span>
+              <a href="/projetos" target="_blank" className="span-contact">
+                <span className= "w-4 h-4 bg-gradient-to-br from-[#4158D0] via-[#C850C0] via-46% to-[#FFCC70] rounded-full"></span>
                 <span className="border-about">Meus Projetos</span>
               </a>
-              <a href="https://github.com/PabloLSa/curriculo/blob/main/CV-Front-end.pdf" target="_blank" className="flex items-center gap-2 hover:text-blue-500">
+              <a href="https://github.com/PabloLSa/curriculo/blob/main/CV-Front-end.pdf" target="_blank" className="span-contact">
                 <span className="w-4 h-4 bg-gradient-to-br from-[#4158D0] via-[#C850C0] via-46% to-[#FFCC70] rounded-full"></span>
                 <span className="border-about">Veja meu currículo</span>
               </a>
