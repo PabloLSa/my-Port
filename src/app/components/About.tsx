@@ -1,6 +1,10 @@
 'use client'
 import { FaReact, FaDocker } from 'react-icons/fa';
+import { SiTailwindcss } from 'react-icons/si';
 import { useContext, useState, useEffect } from 'react';
+import { TbBrandNextjs } from 'react-icons/tb'
+import Typical from 'react-typical';
+
 
 import Image from "next/image";
 import ThemeContext from '../context/ThemeContext';
@@ -71,28 +75,29 @@ function About() {
             </div>
             <div className='flex items-center justify-center h-full'>
               <p className={`font-sans font-bold text-xl sm:text-2xl text-center ${themeAbout}`}>     
-                Sou um desenvolvedor web com foco nas tecnologias React, Tailwind, Next.js e conexão com o GitHub! 
-                Em agosto de 2022, decidi fazer uma transição de carreira e ingressei na Trybe, uma escola de tecnologia, onde me tornei
-                um desenvolvedor Full Stack.
-                Estou trilhando para alcançar esse objetivo!
+                Sou um desenvolvedor web com foco nas tecnologias React, Tailwind, Next.js!! Em agosto de 2022 decidi 
+                fazer uma transição de carreira
+                e ingressei na Trybe, onde me tornei
+                um desenvolvedor Full Stack. E com o apoio da Trybe estou trilhando um caminho de sucesso
+                como desenvolvedor web. Estou pronto para tornar realidade a minha transição de carreira!!
               </p>
             </div>
-            <div className='flex flex-col items-center'>
-              <span className={`mr-4 font-sans font-bold text-2xl ${themeText} sm:text-xl`}>
-                Tecnologias Relevantes
+            <div className='flex flex-col items-center gap-1'>
+              <span className={`mr-4 font-sans font-bold text-xl ${themeText} sm:text-3xl`}>
+                Tecnologias Essenciais 
               </span>
               <div className='flex gap-2'>
-                <a href="https://react.dev/" target="_blank" className="mb-3 font-sans text-lg text-blue-600 hover:text-blue-500">
-                  <FaReact className="mr-2" />
+                <a href="https://react.dev/" target="_blank" className="mb-3 font-sans text-lg text-blue-600 hover:text-blue-400">
+                  <FaReact className="mr-2 text-xl sm:text-3xl" />
                 </a>
-                <a href="#sobre-mim" target="_blank" className="mb-3 font-sans text-lg text-blue-600 hover:text-blue-400 " rel="noopener noreferrer">
-                  <FaDocker className="mr-2" />
+                <a href="https://tailwindcss.com/" target="_blank" className="mb-3 font-sans text-lg text-blue-600 hover:text-blue-400 " rel="noopener noreferrer">
+                  <SiTailwindcss className="mr-2 text-xl sm:text-3xl" />
                 </a>
-                <a href="#sobre-mim" target="_blank" className="mb-3 font-sans text-lg text-blue-600 hover:text-blue-400 " rel="noopener noreferrer">
-                  <FaDocker className="mr-2" />
+                <a href="https://nextjs.org/docs" target="_blank" className="mb-3 font-sans text-lg text-blue-600 hover:text-blue-400 " rel="noopener noreferrer">
+                  <TbBrandNextjs className="mr-2 text-xl sm:text-3xl" />
                 </a>
-                <a href="#sobre-mim" target="_blank" className="mb-3 font-sans text-lg text-blue-600 hover:text-blue-400 " rel="noopener noreferrer">
-                  <FaDocker className="mr-2" />
+                <a href="https://docs.docker.com/" target="_blank" className="mb-3 font-sans text-lg text-blue-600 hover:text-blue-400 " rel="noopener noreferrer">
+                  <FaDocker className="mr-2 text-xl sm:text-3xl" />
                 </a>
               </div>
             </div>
