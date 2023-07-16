@@ -3,7 +3,7 @@ import { FaReact, FaDocker } from 'react-icons/fa';
 import { SiTailwindcss } from 'react-icons/si';
 import { useContext, useState, useEffect } from 'react';
 import { TbBrandNextjs } from 'react-icons/tb'
-import Typical from 'react-typical';
+// import Typical from 'react-typical';
 
 
 import Image from "next/image";
@@ -13,7 +13,7 @@ function About() {
   const theme = useContext(ThemeContext);
   const [themeClasses, setThemeClasses] = useState('bg-gradient-to-br from-zinc-900 to-zinc-800 mx-auto py-8 min-h-screen');
   const [themeText, setThemeText] = useState(`text-transparent bg-gradient-to-br from-[#4158D0] via-[#C850C0] via-46% to-purple-500 bg-clip-text`);
-  const [themeAbout, setThemeAbout] = useState(`font-sans font-bold text-xl sm:text-2xl text-center text-white`);
+  const [themeAbout, setThemeAbout] = useState(`font-sans font-bold text-xl sm:text-xl text-center text-white`);
 
   useEffect(() => {
     setThemeClasses(
@@ -65,7 +65,7 @@ function About() {
           <div className="flex flex-col items-center justify-between w-full sm:w-3/4 h-96">
             <div className='flex flex-col items-center w-full'>
               <div className='flex justify-center'>
-                <span className={`font-sans font-bold text-xl sm:text-5xl ${themeText}`}>
+                <span className={`font-sans font-bold text-2xl sm:text-5xl ${themeText}`}>
                   Desenvolvedor Full Stack
                 </span>
               </div>
@@ -74,15 +74,14 @@ function About() {
               </span>
             </div>
             <div className='flex items-center justify-center h-full'>
-              <p className={`font-sans font-bold text-xl sm:text-2xl text-center ${themeAbout}`}>     
+              <p className={`font-sans font-bold text-xl sm:text-xl text-center ${themeAbout}`}>     
                 Sou um desenvolvedor web com foco nas tecnologias React, Tailwind, Next.js!! Em agosto de 2022 decidi 
-                fazer uma transição de carreira
-                e ingressei na Trybe, onde me tornei
-                um desenvolvedor Full Stack. E com o apoio da Trybe estou trilhando um caminho de sucesso
-                como desenvolvedor web. Estou pronto para tornar realidade a minha transição de carreira!!
+                fazer uma transição de carreira e ingressei na Trybe, onde me tornei um desenvolvedor Full Stack.Estou pronto
+                para deixar minha transição de carreira tornar-se uma realidade!!
+
               </p>
             </div>
-            <div className='flex flex-col items-center gap-1'>
+            <div className='flex flex-col items-center'>
               <span className={`mr-4 font-sans font-bold text-xl ${themeText} sm:text-3xl`}>
                 Tecnologias Essenciais 
               </span>
