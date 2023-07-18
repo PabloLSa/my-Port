@@ -13,7 +13,7 @@ function Footer() {
           />
         </div>
         <div className="text-white">
-          <p className="font-bold font-sans">Pablo Lanim de Sá</p>
+          <p className="font-bold font-sans">Pablo Landim de Sá</p>
           <p>Web Developer</p>
         </div>
       </div>
