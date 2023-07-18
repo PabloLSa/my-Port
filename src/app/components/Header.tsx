@@ -49,12 +49,12 @@ function Header() {
                         bg-clip-text"
           >Conecte-se</span>
           <a href="https://www.linkedin.com/in/pablolandimdesadev/" target="_blank"rel="noreferrer"
-          className="mx-2 text-xl text-purple-600 hover:text-blue-600"
+          className="mx-2 text-xl text-purple-600 transition-transform duration-300 hover:text-blue-600 hover:scale-125"
           >
             <BsLinkedin />
           </a>
           <a href="https://github.com/PabloLSa" target="_blank" rel="noreferrer"
-          className="mx-2 text-xl text-purple-600 hover:text-gray-600"
+          className="mx-2 text-xl text-purple-600 transition-transform duration-300 hover:text-gray-600 hover:scale-125"
           >
             <BsGithub />
           </a>
