@@ -10,12 +10,12 @@ function Footer() {
   useEffect(() => {
     setThemeDarkMode(
       theme.color === 'light'
-        ? 'bg-gradient-to-bl from-gray-100 to-gray-400 border-black text-black'
+        ? 'bg-gradient-to-r from-gray-100 to-gray-400 border-black'
         : 'bg-gradient-to-bl from-zinc-900 to-zinc-800'
     );
     setFooterDarkMode(
       theme.color === 'light'
-        ? 'bg-gradient-to-bl from-gray-100 to-gray-400 border-black text-black'
+        ? 'bg-gradient-to-r from-gray-100 to-gray-400 border-black text-black'
         : 'bg-gradient-to-bl from-zinc-900 to-zinc-800 border-white text-white'
     );
   }, [theme.color]);
