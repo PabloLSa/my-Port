@@ -28,8 +28,8 @@ function Footer() {
           <Image
             src="/footerTres.jpeg"
             alt="Minha Foto"
-            width={60}
-            height={60}
+            width={50}
+            height={50}
           />
         </div>
         <div className={`${footerDarkMode} border-l-2 pl-4`}>
