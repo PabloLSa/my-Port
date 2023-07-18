@@ -18,7 +18,7 @@ function About() {
   useEffect(() => {
     setThemeClasses(
       theme.color === 'light'
-        ? 'bg-gradient-to-br from-gray-100 to-gray-400'
+        ? 'bg-gradient-to-r from-gray-100 to-gray-400'
         : 'bg-gradient-to-br from-zinc-900 to-zinc-800'
     );
     setThemeText(
@@ -28,7 +28,7 @@ function About() {
     );
     setThemeAbout(
       theme.color === 'light'
-        ? 'text-blue-800'
+        ? 'text-black'
         : 'text-white'
     );
   }, [theme.color]);
@@ -74,7 +74,7 @@ function About() {
               </span>
             </div>
             <div className='flex items-center justify-center h-full'>
-              <p className={`font-sans font-bold text-xs sm:text-xl xl:text-3xl md:text-2xl text-center ${themeAbout}`}>     
+              <p className={`font-sans text-xs sm:text-xl xl:text-3xl md:text-2xl text-center ${themeAbout}`}>     
                 Sou um desenvolvedor web com foco nas tecnologias React, Tailwind, Next.js!! Em agosto de 2022 decidi 
                 fazer uma transição de carreira e ingressei na Trybe, onde me tornei um desenvolvedor Full Stack. Estou pronto
                 para deixar minha transição de carreira tornar-se uma realidade!!
