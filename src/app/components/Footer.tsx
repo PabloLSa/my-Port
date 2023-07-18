@@ -16,7 +16,7 @@ function Footer() {
     setFooterDarkMode(
       theme.color === 'light'
         ? 'bg-gradient-to-r from-gray-100 to-gray-400 border-black text-black'
-        : 'bg-gradient-to-bl from-zinc-900 to-zinc-800 border-white text-white'
+        : 'bg-gradient-to-r from-zinc-900 to-zinc-800 border-white text-white'
     );
   }, [theme.color]);
 
