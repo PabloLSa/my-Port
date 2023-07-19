@@ -13,7 +13,7 @@ function About() {
   const theme = useContext(ThemeContext);
   const [themeClasses, setThemeClasses] = useState('bg-gradient-to-br from-zinc-900 to-zinc-800 mx-auto py-8 min-h-screen');
   const [themeText, setThemeText] = useState(`text-transparent bg-gradient-to-br from-[#4158D0] via-[#C850C0] via-46% to-purple-500 bg-clip-text`);
-  const [themeAbout, setThemeAbout] = useState(`font-sans font-bold text-xl sm:text-xl text-center text-white`);
+  const [themeAbout, setThemeAbout] = useState(`text-white`);
 
   useEffect(() => {
     setThemeClasses(
@@ -38,7 +38,7 @@ function About() {
       <section className={`mx-auto py-8 min-h-screen ${themeClasses}`}>
         <div className="container flex flex-col gap-3 px-4 mx-auto sm:flex-row-reverse">
           <div className="flex flex-col items-center w-full gap-4 sm:w-1/4">
-            <div className="flex items-center justify-center w-32 mb-4 h-36 xl:w-64 xl:h-64 sm:w-56 sm:h-56">
+            <div className="flex items-center justify-center sm:w-32 mb-4 sm:h-36 xl:w-64 xl:h-64 md:w-56 md:h-56">
               <Image
                 src="/myphototwo.jpeg"
                 alt="Minha Foto"
@@ -74,17 +74,19 @@ function About() {
               </span>
             </div>
             <div className='flex items-center justify-center h-full'>
-              <p className={`font-sans text-xs sm:text-xl xl:text-3xl md:text-2xl text-center ${themeAbout}`}>     
+              <p className={`font-sans sm:text-xs xl:text-3xl md:text-2xl text-center ${themeAbout}`}>     
                 Sou um desenvolvedor web com foco nas tecnologias React, Tailwind, Next.js!! Em agosto de 2022 decidi 
                 fazer uma transição de carreira e ingressei na Trybe, onde me tornei um desenvolvedor Full Stack. Estou pronto
                 para deixar minha transição de carreira tornar-se uma realidade!!
               </p>
             </div>
-            <div className='flex flex-col items-center gap-2'>
+          </div>
+        </div>
+        <div className='flex flex-col items-center gap-2 overflow-hidden'>
               <span className={`mr-4 font-sans font-bold text-xl ${themeText} sm:text-3xl xl:text-4xl`}>
                 Tecnologias Essenciais 
               </span>
-              <div className='flex gap-2'>
+              <div className='flex gap-3'>
                 <a href="https://react.dev/" target="_blank" className="mb-3 font-sans text-lg text-blue-600 transition-transform duration-300 hover:text-blue-400 hover:scale-125">
                   <FaReact className="mr-2 text-3xl sm:text-4xl xl:text-5xl" />
                 </a>
@@ -99,8 +101,6 @@ function About() {
                 </a>
               </div>
             </div>
-          </div>
-        </div>
       </section>
     </>
   );
