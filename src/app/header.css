@@ -14,7 +14,7 @@
     @apply bg-zinc-900 flex flex-col justify-center py-5 items-center w-full
   }
   .light {
-    @apply xl:text-5xl flex items-center mx-6 ml-4 text-3xl text-black hover:text-purple-600
+    @apply xl:text-5xl flex items-center mx-6 ml-4 text-3xl text-purple-700 hover:text-black
   }
   .dark {
     @apply xl:text-5xl flex items-center mx-6 ml-4 text-3xl text-white hover:text-purple-600
