@@ -11,12 +11,12 @@ function Footer() {
   useEffect(() => {
     setThemeDarkMode(
       theme.color === 'light'
-        ? 'bg-gradient-to-r from-gray-100 to-gray-500 border-black'
+        ? 'bg-gradient-to-r from-white via-[#4158D0]'
         : 'bg-gradient-to-bl from-zinc-900 to-zinc-800'
     )
     setFooterDarkMode(
       theme.color === 'light'
-        ? 'bg-gradient-to-r from-gray-100 to-gray-500 border-black text-black'
+        ? 'bg-gradient-to-r from-[#4158D0] via-[#C850C0] via-46% to-[#FFCC70] border-black text-black'
         : 'bg-gradient-to-r from-zinc-900 to-zinc-800 border-white text-white'
     );
   }, [theme.color]);

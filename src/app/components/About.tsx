@@ -18,7 +18,7 @@ function About() {
   useEffect(() => {
     setThemeClasses(
       theme.color === 'light'
-        ? 'bg-gradient-to-r from-gray-100 to-gray-400'
+        ? 'bg-white'
         : 'bg-gradient-to-br from-zinc-900 to-zinc-800'
     );
     setThemeText(
