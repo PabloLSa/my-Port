@@ -2,6 +2,7 @@ import './globals.css'
 import './home.css'
 import './fonts.css'
 import './header.css'
+import './footer.css'
 import { Inter } from 'next/font/google'
 import ThemeProviderContext from './context/ThemeProviderContext';
 

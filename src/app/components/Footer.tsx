@@ -5,24 +5,24 @@ import { useContext, useEffect, useState } from 'react';
 
 function Footer() {
   const theme = useContext(ThemeContext);
-  const [themeDarkMode, setThemeDarkMode] = useState('bg-gradient-to-bl from-zinc-900 to-zinc-800');
-  const [footerDarkMode, setFooterDarkMode] = useState('bg-gradient-to-bl from-zinc-900 to-zinc-800');
+  const [themeDarkMode, setThemeDarkMode] = useState('setThemeDarkMode');
+  const [footerDarkMode, setFooterDarkMode] = useState('footerDarkMode');
 
   useEffect(() => {
     setThemeDarkMode(
       theme.color === 'light'
-        ? 'bg-gradient-to-r from-white via-[#4158D0]'
-        : 'bg-gradient-to-bl from-zinc-900 to-zinc-800'
+        ? 'setThemeLightMode'
+        : 'setThemeDarkMode'
     )
     setFooterDarkMode(
       theme.color === 'light'
         ? 'bg-gradient-to-r from-[#4158D0] via-[#C850C0] via-46% to-[#FFCC70] border-black text-black'
-        : 'bg-gradient-to-r from-zinc-900 to-zinc-800 border-white text-white'
+        : 'footerDarkMode'
     );
   }, [theme.color]);
 
   return (
-    <footer className ={`${themeDarkMode} py-6 flex justify-center`}>
+    <footer className ={`${themeDarkMode}`}>
       <div className="flex items-center space-x-4">
         <div className="overflow-hidden rounded-lg">
           <Image
