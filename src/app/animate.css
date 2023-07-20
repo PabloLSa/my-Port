@@ -1,0 +1,48 @@
+@keyframes pisca-pisca {
+  0% {
+    opacity: 0; /* Fica invisível */
+  }
+  50% {
+    opacity: 1; /* Fica visível */
+  }
+  100% {
+    opacity: 0; /* Fica invisível novamente */
+  }
+}
+
+@keyframes desaparecer {
+  to {
+    opacity: 0; /* Desaparece após 3 segundos (pode ajustar o tempo conforme necessário) */
+  }
+}
+
+.animate-pulse-stronger {
+  animation-name: pisca-pisca, desaparecer;
+  animation-duration: 1.5s, 3s;
+  animation-iteration-count: infinite, 1;
+}
+
+/* CSS */
+.texto-digitado {
+  white-space: nowrap;
+  overflow: hidden;
+  animation: digitar 5s steps(40);
+}
+
+@keyframes digitar {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+.texto-escondido {
+  opacity: 0; /* Começa invisível */
+  transition: opacity 0.3s; /* Define a transição de opacidade */
+}
+
+.elemento:hover .texto-escondido {
+  opacity: 1; /* Torna-se visível ao passar o mouse */
+}
+
