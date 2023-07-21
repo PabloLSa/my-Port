@@ -9,6 +9,7 @@ module.exports = {
     extend: {
       fontFamily: {
         sans: ["DM Sans", "sans-serif"],
+        lugrasimo: ["Lugrasimo", "cursive"],
       },
     },
   },

@@ -1,5 +1,5 @@
 import './globals.css'
-import './home.css'
+import './about.css'
 import './fonts.css'
 import './header.css'
 import './footer.css'

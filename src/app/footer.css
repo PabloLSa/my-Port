@@ -10,6 +10,6 @@
     @apply bg-gradient-to-r from-white via-purple-300 py-6 flex justify-center
   }
   .footerDarkMode {
-    @apply bg-gradient-to-r from-zinc-900 to-zinc-800 border-white text-white border-white text-white
+    @apply bg-gradient-to-r from-zinc-900 to-zinc-800 border-white text-white 
   }
 }

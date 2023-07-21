@@ -20,11 +20,11 @@
     @apply xl:text-5xl flex items-center mx-6 ml-4 text-3xl text-white hover:text-purple-600
   }
   .h1-light {
-    @apply xl:text-5xl text-3xl sm:text-4xl font-bold text-center font-sans text-black
+    @apply xl:text-5xl text-3xl sm:text-4xl font-bold text-center font-lugrasimo text-black
   }
 
   .h1-dark {
-    @apply xl:text-5xl text-3xl sm:text-4xl font-bold text-center font-sans text-white
+    @apply xl:text-5xl text-3xl sm:text-4xl font-bold text-center font-lugrasimo text-white
   }
   .span {
     @apply flex items-center
