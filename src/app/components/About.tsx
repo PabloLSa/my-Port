@@ -12,15 +12,15 @@ import ThemeContext from '../context/ThemeContext'
 
 function About() {
   const theme = useContext(ThemeContext);
-  const [themeClasses, setThemeClasses] = useState('bg-gradient-to-br from-zinc-900 to-zinc-800 mx-auto py-8 min-h-screen');
+  const [themeClasses, setThemeClasses] = useState('themeBlack');
   const [themeText, setThemeText] = useState(`text-transparent bg-gradient-to-br from-[#4158D0] via-[#C850C0] via-46% to-purple-500 bg-clip-text`);
   const [themeAbout, setThemeAbout] = useState(`text-white`);
 
   useEffect(() => {
     setThemeClasses(
       theme.color === 'light'
-        ? 'bg-white'
-        : 'bg-gradient-to-br from-zinc-900 to-zinc-800'
+        ? 'themeWhite'
+        : 'themeBlack'
     );
     setThemeText(
       theme.color === 'light'
