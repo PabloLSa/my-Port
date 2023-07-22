@@ -52,7 +52,7 @@ function About() {
               <a href="/contato" target="_blank" className="span-contact">
                 <span className="w-4 h-4 xl:w-6 xl:h-6 bg-gradient-to-br from-[#4158D0] via-[#C850C0] via-46% to-[#FFCC70] rounded-full ">
                 </span>
-                <span className="transition-transform duration-300 border-about hover:scale-125">Contato
+                <span className="texto-digitado transition-transform duration-300 border-about hover:scale-125">Contato
                   <span className="inline-block w-1 h-1 text-purple-500 md:text-2xl xl:text-2xl sm:text-xl animate-pulse-stronger"> | </span>
                 </span>
               </a>
@@ -82,7 +82,7 @@ function About() {
             <div className='flex items-center justify-center h-full'>
               <p className={`sm:text-xs xl:text-2xl md:text-xl text-justify ${themeAbout}`}>
                 Sou um desenvolvedor Full Stack, com paixão pelo design de  Front-end. Em agosto de 2022, realizei uma transição de carreira e me juntei à Trybe, onde através de projetos desafiadores e envolventes, tornei-me um especialista completo.
-                Minha jornada nesse universo de programação tem sido fascinante, hoje me sinto capaz de criar interfaces de usuário que são não apenas atraentes, mas também responsivas e funcionais!!
+                Minha jornada nesse universo de programação tem sido incrível, hoje me sinto capaz de criar interfaces de usuário que são não apenas atraentes, mas também responsivas e funcionais!!
               </p>
             </div>
           </div>
