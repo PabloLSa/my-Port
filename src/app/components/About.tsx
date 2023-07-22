@@ -3,6 +3,7 @@ import { FaReact, FaDocker } from 'react-icons/fa';
 import { SiTailwindcss } from 'react-icons/si';
 import { useContext, useState, useEffect } from 'react';
 import { TbBrandNextjs } from 'react-icons/tb'
+import{ BiLogoFigma } from 'react-icons/bi'
 import Image from "next/image";
 import ThemeContext from '../context/ThemeContext'
 
@@ -52,11 +53,11 @@ function About() {
                 <span className="w-4 h-4 xl:w-6 xl:h-6 bg-gradient-to-br from-[#4158D0] via-[#C850C0] via-46% to-[#FFCC70] rounded-full ">
                 </span>
                 <span className="transition-transform duration-300 border-about hover:scale-125">Contato
-                <span className="inline-block w-1 h-1 text-purple-500 md:text-2xl xl:text-2xl sm:text-xl animate-pulse-stronger"> | </span>
+                  <span className="inline-block w-1 h-1 text-purple-500 md:text-2xl xl:text-2xl sm:text-xl animate-pulse-stronger"> | </span>
                 </span>
               </a>
               <a href="/projetos" target="_blank" className="span-contact">
-                <span className= "w-4 h-4 xl:w-6 xl:h-6 bg-gradient-to-br from-[#4158D0] via-[#C850C0] via-46% to-[#FFCC70] rounded-full"></span>
+                <span className="w-4 h-4 xl:w-6 xl:h-6 bg-gradient-to-br from-[#4158D0] via-[#C850C0] via-46% to-[#FFCC70] rounded-full"></span>
                 <span className="border-about">Meus Projetos</span>
               </a>
               <a href="https://github.com/PabloLSa/curriculo/blob/main/CV-Front-end.pdf" target="_blank" className="span-contact">
@@ -69,9 +70,9 @@ function About() {
             <div className='flex flex-col items-center w-full'>
               <div className='flex justify-center'>
                 <div>
-                <h1 className={` texto-digitado font-sans font-bold text-2xl xl:text-5xl md:text-4xl sm:text-5xl ${themeText}`}>
-                  Desenvolvedor Web
-                </h1>
+                  <h1 className={` texto-digitado font-sans font-bold text-2xl xl:text-5xl md:text-4xl sm:text-5xl ${themeText}`}>
+                    Desenvolvedor Web
+                  </h1>
                 </div>
               </div>
               <span className={` texto-digitado font-sans text-xl sm:text-3xl font-bold md:text-2xl ${themeText}`}>
@@ -79,7 +80,7 @@ function About() {
               </span>
             </div>
             <div className='flex items-center justify-center h-full'>
-              <p className={`sm:text-xs xl:text-2xl md:text-xl text-justify ${themeAbout}`}>     
+              <p className={`sm:text-xs xl:text-2xl md:text-xl text-justify ${themeAbout}`}>
                 Sou um desenvolvedor Full Stack, com paixão pelo design de  Front-end. Em agosto de 2022, realizei uma transição de carreira e me juntei à Trybe, onde através de projetos desafiadores e envolventes, tornei-me um especialista completo.
                 Minha jornada nesse universo de programação tem sido fascinante, hoje me sinto capaz de criar interfaces de usuário que são não apenas atraentes, mas também responsivas e funcionais!!
               </p>
@@ -87,24 +88,29 @@ function About() {
           </div>
         </div>
         <div className='flex flex-col items-center gap-2 overflow-hidden'>
-              <span className={`mr-4 font-sans font-bold text-xl ${themeText} sm:text-3xl xl:text-4xl`}>
-                Tecnologias Essenciais 
-              </span>
-              <div className='flex gap-3'>
-                <a href="https://react.dev/" target="_blank" className="mb-3 font-sans text-lg text-blue-600 transition-transform duration-300 hover:text-blue-400 hover:scale-125">
-                  <FaReact className="mr-2 text-3xl sm:text-4xl xl:text-5xl" />
-                </a>
-                <a href="https://tailwindcss.com/" target="_blank" className="mb-3 font-sans text-lg text-blue-600 transition-transform duration-300 hover:text-blue-400 hover:scale-125 " rel="noopener noreferrer">
-                  <SiTailwindcss className="mr-2 text-3xl sm:text-4xl xl:text-5xl" />
-                </a>
-                <a href="https://nextjs.org/docs" target="_blank" className="mb-3 font-sans text-lg text-blue-600 transition-transform duration-300 hover:text-blue-400 hover:scale-125 " rel="noopener noreferrer">
-                  <TbBrandNextjs className="mr-2 text-3xl sm:text-4xl xl:text-5xl" />
-                </a>
-                <a href="https://docs.docker.com/" target="_blank" className="mb-3 font-sans text-lg text-blue-600 transition-transform duration-300 hover:text-blue-400 hover:scale-125 " rel="noopener noreferrer">
-                  <FaDocker className="mr-2 text-3xl sm:text-4xl xl:text-5xl" />
-                </a>
-              </div>
-            </div>
+          <span className={`mr-4 font-sans font-bold text-xl ${themeText} sm:text-3xl xl:text-4xl`}>
+            Tecnologias Essenciais
+          </span>
+
+          <div className='flex gap-3'>
+            <a href="https://react.dev/" target="_blank" className="group mb-3 font-sans text-lg text-blue-600 transition-transform duration-300 hover:text-blue-400 hover:scale-125 relative">
+              <FaReact className="mr-2 text-3xl sm:text-4xl xl:text-5xl" />
+              <span className="opacity-0 group-hover:opacity-100 absolute top-[-30px] left-0 bg-gradient-to-br from-[#4158D0] via-[#C850C0] text-white py-1 px-2 rounded-md">React</span>
+            </a>
+            <a href="https://tailwindcss.com/" target="_blank" className="group mb-3 font-sans text-lg text-blue-600 transition-transform duration-300 hover:text-blue-400 hover:scale-125 relative" rel="noopener noreferrer">
+              <SiTailwindcss className="mr-2 text-3xl sm:text-4xl xl:text-5xl" />
+              <span className="opacity-0 group-hover:opacity-100 absolute top-[-30px] left-0 bg-gradient-to-br from-[#4158D0] via-[#C850C0] text-white py-1 px-2 rounded-md">Tailwind CSS</span>
+            </a>
+            <a href="https://nextjs.org/docs" target="_blank" className="group mb-3 font-sans text-lg text-blue-600 transition-transform duration-300 hover:text-blue-400 hover:scale-125 relative" rel="noopener noreferrer">
+              <TbBrandNextjs className="mr-2 text-3xl sm:text-4xl xl:text-5xl" />
+              <span className="opacity-0 group-hover:opacity-100 absolute top-[-30px] left-0 bg-gradient-to-br from-[#4158D0] via-[#C850C0] text-white py-1 px-2 rounded-md">Next.js</span>
+            </a>
+            <a href="https://www.figma.com/" target="_blank" className="group mb-3 font-sans text-lg text-blue-600 transition-transform duration-300 hover:text-blue-400 hover:scale-125 relative" rel="noopener noreferrer">
+              <BiLogoFigma className="mr-2 text-3xl sm:text-4xl xl:text-5xl" />
+              <span className="opacity-0 top-[-30px]  group-hover:opacity-100 absolute left-0 bg-gradient-to-br from-[#4158D0] via-[#C850C0] text-white py-1 px-2 rounded-md">Figma</span>
+            </a>
+          </div>        
+        </div>
       </section>
     </>
   );
