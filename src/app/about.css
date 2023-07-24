@@ -7,12 +7,6 @@
 .border-about {
   @apply px-2 py-1 font-sans text-xl font-bold text-transparent xl:text-2xl bg-gradient-to-br from-blue-500 to-purple-500 bg-clip-text hover:text-[#C850C0];
 }
-.themeBlack {
-   @apply bg-gradient-to-br from-zinc-900 to-zinc-800 mx-auto py-8 min-h-screen
-  }
-  .themeWhite {
-    @apply bg-white mx-auto py-8 min-h-screen
-  }
  
 }
 

@@ -49,14 +49,14 @@ function About() {
               />
             </div>
             <div className="flex flex-col items-start gap-2">
-              <a href="/contato" target="_blank" className="span-contact">
+              <a href="/contact" className="span-contact">
                 <span className="w-4 h-4 xl:w-6 xl:h-6 bg-gradient-to-br from-[#4158D0] via-[#C850C0] via-46% to-[#FFCC70] rounded-full ">
                 </span>
-                <span className="texto-digitado transition-transform duration-300 border-about hover:scale-125">Contato
+                <span className="transition-transform duration-300 texto-digitado border-about hover:scale-125">Contato
                   <span className="inline-block w-1 h-1 text-purple-500 md:text-2xl xl:text-2xl sm:text-xl animate-pulse-stronger"> | </span>
                 </span>
               </a>
-              <a href="/projetos" target="_blank" className="span-contact">
+              <a href="/projects" className="span-contact">
                 <span className="w-4 h-4 xl:w-6 xl:h-6 bg-gradient-to-br from-[#4158D0] via-[#C850C0] via-46% to-[#FFCC70] rounded-full"></span>
                 <span className="border-about">Meus Projetos</span>
               </a>
@@ -93,19 +93,19 @@ function About() {
           </span>
 
           <div className='flex gap-3'>
-            <a href="https://react.dev/" target="_blank" className="group mb-3 font-sans text-lg text-blue-600 transition-transform duration-300 hover:text-blue-400 hover:scale-125 relative">
+            <a href="https://react.dev/" target="_blank" className="relative mb-3 font-sans text-lg text-blue-600 transition-transform duration-300 group hover:text-blue-400 hover:scale-125">
               <FaReact className="mr-2 text-3xl sm:text-4xl xl:text-5xl" />
               <span className="opacity-0 group-hover:opacity-100 absolute top-[-30px] left-0 bg-gradient-to-br from-[#4158D0] via-[#C850C0] text-white py-1 px-2 rounded-md">React</span>
             </a>
-            <a href="https://tailwindcss.com/" target="_blank" className="group mb-3 font-sans text-lg text-blue-600 transition-transform duration-300 hover:text-blue-400 hover:scale-125 relative" rel="noopener noreferrer">
+            <a href="https://tailwindcss.com/" target="_blank" className="relative mb-3 font-sans text-lg text-blue-600 transition-transform duration-300 group hover:text-blue-400 hover:scale-125" rel="noopener noreferrer">
               <SiTailwindcss className="mr-2 text-3xl sm:text-4xl xl:text-5xl" />
               <span className="opacity-0 group-hover:opacity-100 absolute top-[-30px] left-0 bg-gradient-to-br from-[#4158D0] via-[#C850C0] text-white py-1 px-2 rounded-md">Tailwind CSS</span>
             </a>
-            <a href="https://nextjs.org/docs" target="_blank" className="group mb-3 font-sans text-lg text-blue-600 transition-transform duration-300 hover:text-blue-400 hover:scale-125 relative" rel="noopener noreferrer">
+            <a href="https://nextjs.org/docs" target="_blank" className="relative mb-3 font-sans text-lg text-blue-600 transition-transform duration-300 group hover:text-blue-400 hover:scale-125" rel="noopener noreferrer">
               <TbBrandNextjs className="mr-2 text-3xl sm:text-4xl xl:text-5xl" />
               <span className="opacity-0 group-hover:opacity-100 absolute top-[-30px] left-0 bg-gradient-to-br from-[#4158D0] via-[#C850C0] text-white py-1 px-2 rounded-md">Next.js</span>
             </a>
-            <a href="https://www.figma.com/" target="_blank" className="group mb-3 font-sans text-lg text-blue-600 transition-transform duration-300 hover:text-blue-400 hover:scale-125 relative" rel="noopener noreferrer">
+            <a href="https://www.figma.com/" target="_blank" className="relative mb-3 font-sans text-lg text-blue-600 transition-transform duration-300 group hover:text-blue-400 hover:scale-125" rel="noopener noreferrer">
               <BiLogoFigma className="mr-2 text-3xl sm:text-4xl xl:text-5xl" />
               <span className="opacity-0 top-[-30px]  group-hover:opacity-100 absolute left-0 bg-gradient-to-br from-[#4158D0] via-[#C850C0] text-white py-1 px-2 rounded-md">Figma</span>
             </a>

@@ -2,3 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
+.themeBlack {
+  @apply bg-gradient-to-br from-zinc-900 to-zinc-800 mx-auto py-8 min-h-screen
+ }
+ .themeWhite {
+   @apply bg-white mx-auto py-8 min-h-screen
+ }
