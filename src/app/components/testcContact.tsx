@@ -5,7 +5,6 @@ import Header from "./Header";
 import ThemeContext from '../context/ThemeContext'
 import emailjs from '@emailjs/browser';
 
-
 function Contact() {
   const theme = useContext(ThemeContext);
   const [themeClasses, setThemeClasses] = useState('themeBlack');
@@ -40,7 +39,6 @@ function Contact() {
 
   }
 
-
   useEffect(() => {
     setThemeClasses(
       theme.color === 'light'
@@ -53,8 +51,8 @@ function Contact() {
     <>
       <Header />
       <div className={`${themeClasses}`}>
-        <div className="flex flex-col items-center justify-center w-full p-4 mx-auto text-white rounded-none sm:mt-4 bg-zinc-900 md:mt-8 lg:mt-10 xl:mt-12 md:w-8/12 lg:w-6/12 xl:w-4/12 md:rounded-3xl md:p-14">
-          <h1 className="mb-8 font-sans text-4xl font-bold md:mb-14">Contato</h1>
+        <div className="flex flex-col items-center justify-center w-full p-4 mx-auto mt-4 text-white bg-zinc-900 md:mt-8 lg:mt-10 xl:mt-12 md:w-8/12 lg:w-6/12 xl:w-4/12 rounded-3xl md:p-14">
+          <h1 className="mb-8 text-3xl md:mb-14">Converse comigo</h1>
           <form className="flex flex-col w-full max-w-600" onSubmit={sendEmail}>
             <input
               className="px-4 py-2 mb-4 text-white bg-gray-800 rounded-md"
@@ -76,13 +74,13 @@ function Contact() {
               onChange={(e) => setMessage(e.target.value)}
               value={message}
             />
-            <button className="text-base text-white transition transform duration-800 bg-purple-500 hover:bg-gradient-to-r from-[#4158D0] via-[#C850C0] via-46% to-[#FFCC70] border-0 rounded-md cursor-pointer h-34 hover:scale-105"> Enviar mensagem</button>
+            <button className="text-base text-white transition transform bg-blue-400 border-0 rounded-md cursor-pointer h-34 hover:bg-blue-300 hover:scale-105 duration-800">Send</button>
 
           </form>
-          <div className="relative w-48 h-20 p-4 mt-6 transition-transform border-l-4 border-white cursor-pointer duration-800 hover:scale-125 hover:border-purple-500 hover:text-purple-500 rounded-xl">
-            <i className="absolute top-0 left-0 mt-4 text-xs">pablolandimdesa@gmail.com</i>
-            <i className="absolute left-0 text-xs top-10">(+55) 19 99628-6293</i>
-          </div>
+          <div className="flex flex-col items-start justify-start h-20 px-4 mt-6 mb-8 border-l-4 border-white">
+        <span className="my-2 ml-0">Projetos</span>
+        <span className="my-2 ml-0">Sobre mim</span>
+      </div>
         </div>
       </div>
       <Footer />
