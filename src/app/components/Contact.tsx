@@ -4,6 +4,8 @@ import Footer from "./Footer";
 import Header from "./Header";
 import ThemeContext from '../context/ThemeContext'
 import emailjs from '@emailjs/browser';
+import validator from 'validator';
+
 
 
 function Contact() {
@@ -21,6 +23,22 @@ function Contact() {
       return;
     }
 
+    if (!validator.isEmail(email)) {
+      alert('Email inválido');
+      return;
+    }
+    if(message.length < 10){
+      alert('Mensagem muito curta');
+      return;
+    }
+    if(validator.isNumeric(name)){
+      alert('Nome inválido');
+      return;
+    }
+    if(validator.isNumeric(message)){
+      alert('Mensagem inválida');
+      return;
+    }
     const templateParams = {
       from_name: name,
       message: message,
