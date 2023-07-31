@@ -20,11 +20,11 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <ThemeProviderContext>
+    
  <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={inter.className}><ThemeProviderContext>{children} </ThemeProviderContext></body>
     </html>
-    </ThemeProviderContext>
+   
    
   )
 }

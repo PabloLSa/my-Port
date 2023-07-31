@@ -97,7 +97,7 @@ function Contact() {
             <button className="text-base text-white transition transform duration-800 bg-purple-500 hover:bg-gradient-to-r from-[#4158D0] via-[#C850C0] via-46% to-[#FFCC70] border-0 rounded-md cursor-pointer h-34 hover:scale-105"> Enviar mensagem</button>
 
           </form>
-          <div className="relative w-48 h-20 p-4 mt-6 transition-transform border-l-4 border-white cursor-pointer duration-800 hover:scale-125 hover:border-purple-500 hover:text-purple-500 rounded-xl">
+          <div className="relative bg-gray-800 w-48 h-20 p-4 mt-6 transition-transform border-l-4 border-white cursor-pointer duration-800 hover:scale-125 hover:border-purple-500 hover:text-black rounded-xl hover:bg-gradient-to-r from-[#4158D0] via-[#C850C0] via-46% to-[#FFCC70]">
             <i className="absolute top-0 left-0 mt-4 text-xs">pablolandimdesa@gmail.com</i>
             <i className="absolute left-0 text-xs top-10">(+55) 19 99628-6293</i>
           </div>
