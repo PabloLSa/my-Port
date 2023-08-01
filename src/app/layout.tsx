@@ -4,6 +4,7 @@ import './fonts.css'
 import './header.css'
 import './footer.css'
 import './animate.css'
+import './contact.css'
 import { Inter } from 'next/font/google'
 import ThemeProviderContext from './context/ThemeProviderContext';
 

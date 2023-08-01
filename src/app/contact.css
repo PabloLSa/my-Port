@@ -2,7 +2,41 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer components{
+  
+.container-contact-light {
 
-.container {
-  @apply 
- }
+  @apply bg-gradient-to-r from-white via-purple-300 flex flex-col items-center justify-center w-full p-4 mx-auto rounded-none sm:mt-4 md:mt-8 lg:mt-10 xl:mt-12 md:w-8/12 lg:w-6/12 xl:w-4/12 md:rounded-3xl md:p-14;
+
+}
+
+.container-contact-dark {
+  @apply bg-none flex flex-col items-center justify-center w-full p-4 mx-auto rounded-none sm:mt-4 md:mt-8 lg:mt-10 xl:mt-12 md:w-8/12 lg:w-6/12 xl:w-4/12 md:rounded-3xl md:p-14;
+
+}
+
+.input-contact-light {
+
+  @apply text-black px-4 py-2 mb-4 bg-purple-200 rounded-md outline-none appearance-none hover:border border-purple-500 placeholder:text-zinc-800;
+
+}
+
+.input-contact-dark {
+
+   @apply px-4 py-2 mb-4 text-white bg-gray-800 rounded-md outline-none appearance-none hover:border border-purple-500;
+}
+
+.textarea-dark {
+
+  @apply p-8 text-white bg-gray-800;
+
+}
+
+.textarea-white {
+
+  @apply text-black p-8 placeholder:text-zinc-800 bg-purple-200;
+
+
+}
+}
+

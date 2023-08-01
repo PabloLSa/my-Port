@@ -33,7 +33,7 @@ function Footer() {
           />
         </div>
         <div className={`${footerDarkMode} border-l-2 pl-4`}>
-          <p className="pr-4 font-bold font-lugrasimo">Pablo Landim de Sá</p>
+          <p className="pr-4 font-sans font-bold">Pablo Landim de Sá</p>
           <p>Web Developer</p>
         </div>
         </div>
