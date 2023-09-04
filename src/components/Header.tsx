@@ -29,7 +29,7 @@ function Header() {
       <div className="flex flex-col items-center justify-center w-full px-4 sm:flex-row">
         <h1 className={`${themeClasses}`}
           style={{
-            boxShadow: '0px 0px 10px rgba(137, 71, 205, 0.5)',
+            boxShadow: '0px 0px 10px rgba(236, 30, 30, 0.774)',
             padding: '0.3em',
             borderRadius: '0.5em',
             whiteSpace: 'nowrap'
@@ -39,22 +39,15 @@ function Header() {
         </h1>
 
         <span className="span">
-          <span className="
-                        ml-2 text-transparent 
-                        bg-gradient-to-br 
-                        from-[#4158D0] 
-                        via-[#C850C0] 
-                        via-46% 
-                        to-purple-500 
-                        bg-clip-text"
+          <span className="ml-2 text-transparent bg-gradient-to-br from-red-800 via-red-500 to-orange-500 bg-clip-text"
           >Conecte-se</span>
-          <a href="https://www.linkedin.com/in/pablolandimdesadev/" target="_blank"rel="noreferrer"
-          className="mx-2 text-xl text-purple-600 transition-transform duration-300 hover:text-blue-600 hover:scale-125"
+          <a href="https://www.linkedin.com/in/pablolandimdesadev/" target="_blank" rel="noreferrer"
+            className="mx-2 text-xl text-red-500 transition-transform duration-300 hover:text-blue-600 hover:scale-125"
           >
             <BsLinkedin />
           </a>
           <a href="https://github.com/PabloLSa" target="_blank" rel="noreferrer"
-          className="mx-2 text-xl text-purple-600 transition-transform duration-300 hover:text-gray-600 hover:scale-125"
+            className="mx-2 text-xl text-red-500 transition-transform duration-300 hover:text-gray-600 hover:scale-125"
           >
             <BsGithub />
           </a>

@@ -50,10 +50,10 @@ function About() {
             </div>
             <div className="flex flex-col items-start gap-2">
               <a href="/contact" className="span-contact">
-                <span className="w-4 h-4 xl:w-6 xl:h-6 bg-gradient-to-br from-[#4158D0] via-[#C850C0] via-46% to-[#FFCC70] rounded-full ">
+                <span className="w-4 h-4 xl:w-6 xl:h-6 bg-gradient-to-br from-red-800 via-red-500 via-46% to-orange-500 rounded-full ">
                 </span>
                 <span className="transition-transform duration-300 texto-digitado border-about hover:scale-125">Contato
-                  <span className="inline-block w-1 h-1 text-purple-500 md:text-2xl xl:text-2xl sm:text-xl animate-pulse-stronger"> | </span>
+                  <span className="inline-block w-1 h-1 text-purple-500 md:text-2xl xl:text-2xl sm:text-xl animate-pulse-stronger"> . </span>
                 </span>
               </a>
               <a href="/projects" className="span-contact">

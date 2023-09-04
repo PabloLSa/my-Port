@@ -6,7 +6,7 @@ import './footer.css'
 import './animate.css'
 import './contact.css'
 import { Inter } from 'next/font/google'
-import ThemeProviderContext from './context/ThemeProviderContext';
+import ThemeProviderContext from '../context/ThemeProviderContext';
 
 const inter = Inter({ subsets: ['latin'] })
 

@@ -1,8 +1,8 @@
 'use client'
 import { useContext, useEffect, useState } from "react";
-import Footer from "../components/Footer";
-import Header from "../components/Header";
-import ThemeContext from '../context/ThemeContext'
+import Footer from "../../components/Footer";
+import Header from "../../components/Header";
+import ThemeContext from '../../context/ThemeContext'
 import emailjs from '@emailjs/browser';
 import validator from 'validator';
 
