@@ -13,7 +13,7 @@ import ThemeContext from '../context/ThemeContext'
 function About() {
   const theme = useContext(ThemeContext);
   const [themeClasses, setThemeClasses] = useState('themeBlack');
-  const [themeText, setThemeText] = useState(`text-transparent bg-gradient-to-br from-[#4158D0] via-[#C850C0] via-46% to-purple-500 bg-clip-text`);
+  const [themeText, setThemeText] = useState(`text-transparent bg-gradient-to-br from-fuchsia-950 via-fuchsia-500 via-45% to-cyan-500 bg-clip-text`);
   const [themeAbout, setThemeAbout] = useState(`text-white`);
 
   useEffect(() => {
@@ -25,7 +25,7 @@ function About() {
     setThemeText(
       theme.color === 'light'
         ? 'text-transparent bg-gradient-to-br from-blue-700 via-purple-500 to-blue-800 bg-clip-text'
-        : 'text-transparent bg-gradient-to-br from-[#4158D0] via-[#C850C0] via-46% to-purple-500 bg-clip-text'
+        : 'text-transparent bg-gradient-to-br from-fuchsia-950 via-fuchsia-500 via-45% to-cyan-500 bg-clip-text'
     );
     setThemeAbout(
       theme.color === 'light'
@@ -50,18 +50,18 @@ function About() {
             </div>
             <div className="flex flex-col items-start gap-2">
               <a href="/contact" className="span-contact">
-                <span className="w-4 h-4 xl:w-6 xl:h-6 bg-gradient-to-br from-red-800 via-red-500 via-46% to-orange-500 rounded-full ">
+                <span className="w-4 h-4 xl:w-6 xl:h-6 bg-gradient-to-br from-fuchsia-950 via-fuchsia-500 via-45% to-cyan-500  rounded-full ">
                 </span>
-                <span className="transition-transform duration-300 texto-digitado border-about hover:scale-125">Contato
+                <span className="transition-transform duration-300 border-about hover:scale-105">Contato
                   <span className="inline-block w-1 h-1 text-purple-500 md:text-2xl xl:text-2xl sm:text-xl animate-pulse-stronger"> . </span>
                 </span>
               </a>
               <a href="/projects" className="span-contact">
-                <span className="w-4 h-4 xl:w-6 xl:h-6 bg-gradient-to-br from-[#4158D0] via-[#C850C0] via-46% to-[#FFCC70] rounded-full"></span>
+                <span className="w-4 h-4 xl:w-6 xl:h-6 bg-gradient-to-br from-fuchsia-950 via-fuchsia-500 via-45% to-cyan-500 rounded-full"></span>
                 <span className="border-about">Meus Projetos</span>
               </a>
               <a href="https://github.com/PabloLSa/curriculo/blob/main/CV-Front-end.pdf" target="_blank" className="span-contact">
-                <span className="w-4 h-4 xl:w-6 xl:h-6 bg-gradient-to-br from-[#4158D0] via-[#C850C0] via-46% to-[#FFCC70] rounded-full"></span>
+                <span className="w-4 h-4 xl:w-6 xl:h-6 bg-gradient-to-br from-fuchsia-950 via-fuchsia-500 via-45% to-cyan-500 rounded-full"></span>
                 <span className="border-about">Veja meu currículo</span>
               </a>
             </div>
@@ -95,19 +95,19 @@ function About() {
           <div className='flex gap-3'>
             <a href="https://react.dev/" target="_blank" className="relative mb-3 font-sans text-lg text-blue-600 transition-transform duration-300 group hover:text-blue-400 hover:scale-125">
               <FaReact className="mr-2 text-3xl sm:text-4xl xl:text-5xl" />
-              <span className="opacity-0 group-hover:opacity-100 absolute top-[-30px] left-0 bg-gradient-to-br from-[#4158D0] via-[#C850C0] text-white py-1 px-2 rounded-md">React</span>
+              <span className="opacity-0 group-hover:opacity-100 absolute top-[-30px] left-0 bg-gradient-to-br from-fuchsia-950 via-fuchsia-500 via-45% to-cyan-500 text-white py-1 px-2 rounded-md">React</span>
             </a>
             <a href="https://tailwindcss.com/" target="_blank" className="relative mb-3 font-sans text-lg text-blue-600 transition-transform duration-300 group hover:text-blue-400 hover:scale-125" rel="noopener noreferrer">
               <SiTailwindcss className="mr-2 text-3xl sm:text-4xl xl:text-5xl" />
-              <span className="opacity-0 group-hover:opacity-100 absolute top-[-30px] left-0 bg-gradient-to-br from-[#4158D0] via-[#C850C0] text-white py-1 px-2 rounded-md">Tailwind CSS</span>
+              <span className="opacity-0 group-hover:opacity-100 absolute top-[-30px] left-0 bg-gradient-to-br from-fuchsia-950 via-fuchsia-500 via-45% to-cyan-500 text-white py-1 px-2 rounded-md">Tailwind CSS</span>
             </a>
             <a href="https://nextjs.org/docs" target="_blank" className="relative mb-3 font-sans text-lg text-blue-600 transition-transform duration-300 group hover:text-blue-400 hover:scale-125" rel="noopener noreferrer">
               <TbBrandNextjs className="mr-2 text-3xl sm:text-4xl xl:text-5xl" />
-              <span className="opacity-0 group-hover:opacity-100 absolute top-[-30px] left-0 bg-gradient-to-br from-[#4158D0] via-[#C850C0] text-white py-1 px-2 rounded-md">Next.js</span>
+              <span className="opacity-0 group-hover:opacity-100 absolute top-[-30px] left-0 bg-gradient-to-br from-fuchsia-950 via-fuchsia-500 via-45% to-cyan-500 text-white py-1 px-2 rounded-md">Next.js</span>
             </a>
             <a href="https://www.figma.com/" target="_blank" className="relative mb-3 font-sans text-lg text-blue-600 transition-transform duration-300 group hover:text-blue-400 hover:scale-125" rel="noopener noreferrer">
               <BiLogoFigma className="mr-2 text-3xl sm:text-4xl xl:text-5xl" />
-              <span className="opacity-0 top-[-30px]  group-hover:opacity-100 absolute left-0 bg-gradient-to-br from-[#4158D0] via-[#C850C0] text-white py-1 px-2 rounded-md">Figma</span>
+              <span className="opacity-0 top-[-30px]  group-hover:opacity-100 absolute left-0 bg-gradient-to-br from-fuchsia-950 via-fuchsia-500 via-45% to-cyan-500 text-white py-1 px-2 rounded-md">Figma</span>
             </a>
           </div>        
         </div>

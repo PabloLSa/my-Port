@@ -16,7 +16,7 @@ function Footer() {
     )
     setFooterDarkMode(
       theme.color === 'light'
-        ? 'bg-gradient-to-r from-[#4158D0] via-[#C850C0] via-46% to-[#FFCC70] border-black text-black'
+        ? 'bg-gradient-to-r from-purple-300 to-purple-200 border-black text-black'
         : 'footerDarkMode'
     );
   }, [theme.color]);
