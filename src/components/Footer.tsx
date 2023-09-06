@@ -16,7 +16,7 @@ function Footer() {
     )
     setFooterDarkMode(
       theme.color === 'light'
-        ? 'bg-gradient-to-r from-purple-300 to-purple-200 border-black text-black'
+        ? 'bg-purple-300 border-black text-black'
         : 'footerDarkMode'
     );
   }, [theme.color]);
@@ -24,12 +24,12 @@ function Footer() {
   return (
     <footer className ={`${themeDarkMode}`}>
       <div className="flex items-center space-x-4">
-        <div className="overflow-hidden rounded-lg">
+        <div className="overflow-hidden rounded-full">
           <Image
-            src="/footerTres.jpeg"
+            src="/plsa.png"
             alt="Minha Foto"
-            width={50}
-            height={50}
+            width={54}
+            height={54}
           />
         </div>
         <div className={`${footerDarkMode} border-l-2 pl-4`}>
