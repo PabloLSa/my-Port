@@ -19,7 +19,7 @@ function Section({ children } : any) {
         style={{
           transform: isInView ? "none" : "translateX(-200px)",
           opacity: isInView ? 1 : 0,
-          transition: "all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s"
+          transition: "all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 2s"
         }}
       >
         {children}
@@ -97,14 +97,14 @@ function About() {
                 Campinas, São Paulo
               </span>
             </div>
-            <Section> 
             <div className='flex items-center justify-center h-full'>
+            <Section> 
               <p className={`sm:text-xs xl:text-2xl md:text-xl text-justify ${themeAbout}`}>
                 Sou um desenvolvedor Full Stack, com paixão pelo design de  Front-end. Em agosto de 2022, realizei uma transição de carreira e me juntei à Trybe, onde através de projetos desafiadores e envolventes, tornei-me um especialista completo.
                 Minha jornada nesse universo de programação tem sido incrível, hoje me sinto capaz de criar interfaces de usuário que são não apenas atraentes, mas também responsivas e funcionais!!
               </p>
-            </div>
                </Section>
+            </div>
             
           </div>
         </div>
