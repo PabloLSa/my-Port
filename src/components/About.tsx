@@ -88,12 +88,12 @@ function About() {
             <div className='flex flex-col items-center w-full'>
               <div className='flex justify-center'>
                 <div>
-                  <h1 className={`font-sans font-bold text-2xl xl:text-5xl md:text-4xl sm:text-5xl ${themeText}`}>
+                  <h1 className={`font-sans texto-digitado font-bold text-2xl xl:text-5xl md:text-4xl sm:text-5xl ${themeText}`}>
                     Desenvolvedor Web
                   </h1>
                 </div>
               </div>
-              <span className={`font-sans text-xl sm:text-3xl font-bold md:text-2xl ${themeText}`}>
+              <span className={`font-sans text-xl texto-digitado sm:text-3xl font-bold md:text-2xl ${themeText}`}>
                 Campinas, São Paulo
               </span>
             </div>
@@ -108,7 +108,9 @@ function About() {
             
           </div>
         </div>
+
         <div className='flex flex-col items-center gap-2 overflow-hidden'>
+        <Section> 
           <span className={`mr-4 font-sans font-bold text-xl ${themeText} sm:text-3xl xl:text-4xl`}>
             Tecnologias Essenciais
           </span>
@@ -131,7 +133,9 @@ function About() {
               <span className="opacity-0 top-[-30px]  group-hover:opacity-100 absolute left-0 bg-gradient-to-br from-fuchsia-950 via-fuchsia-500 via-45% to-cyan-500 text-white py-1 px-2 rounded-md">Figma</span>
             </a>
           </div>        
+        </Section>
         </div>
+
       </section>
     </>
   );
