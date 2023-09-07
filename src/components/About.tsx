@@ -19,7 +19,7 @@ function Section({ children } : any) {
         style={{
           transform: isInView ? "none" : "translateX(-200px)",
           opacity: isInView ? 1 : 0,
-          transition: "all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 2s"
+          transition: "all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 4s"
         }}
       >
         {children}
@@ -109,8 +109,8 @@ function About() {
           </div>
         </div>
 
-        <div className='flex flex-col items-center gap-2 overflow-hidden'>
         <Section> 
+        <div className='flex flex-col items-center gap-2 overflow-hidden'>
           <span className={`mr-4 font-sans font-bold text-xl ${themeText} sm:text-3xl xl:text-4xl`}>
             Tecnologias Essenciais
           </span>
@@ -133,8 +133,8 @@ function About() {
               <span className="opacity-0 top-[-30px]  group-hover:opacity-100 absolute left-0 bg-gradient-to-br from-fuchsia-950 via-fuchsia-500 via-45% to-cyan-500 text-white py-1 px-2 rounded-md">Figma</span>
             </a>
           </div>        
-        </Section>
         </div>
+        </Section>
 
       </section>
     </>
