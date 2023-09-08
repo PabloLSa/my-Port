@@ -26,7 +26,7 @@ function Footer() {
       <div className="flex items-center space-x-4">
         <div className="overflow-hidden rounded-full">
           <Image
-            src="/plsa.png"
+            src="/pl.png"
             alt="Minha Foto"
             width={54}
             height={54}

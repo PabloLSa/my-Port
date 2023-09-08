@@ -14,6 +14,7 @@ function Section({ children } : any) {
   const isInView = useInView(ref, { once: true });
 
   return (
+    
     <section ref={ref}>
       <span
         style={{
@@ -25,6 +26,7 @@ function Section({ children } : any) {
         {children}
       </span>
     </section>
+    
   );
 }
 
@@ -109,7 +111,6 @@ function About() {
           </div>
         </div>
 
-        <Section> 
         <div className='flex flex-col items-center gap-2 overflow-hidden'>
           <span className={`mr-4 font-sans font-bold text-xl ${themeText} sm:text-3xl xl:text-4xl`}>
             Tecnologias Essenciais
@@ -134,8 +135,7 @@ function About() {
             </a>
           </div>        
         </div>
-        </Section>
-
+        
       </section>
     </>
   );
