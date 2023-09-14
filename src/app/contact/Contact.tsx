@@ -113,7 +113,7 @@ function Contact() {
         <div
          className={`${containerContact}`} 
          style={{
-          boxShadow: '4px 0px 10px rgba(137, 71, 205, 0.5)',
+          boxShadow: '0px 0px 10px rgba(136, 35, 106, 0.774)',
           padding: '0.4em',
           borderRadius: '0.6em',
           whiteSpace: 'nowrap'
