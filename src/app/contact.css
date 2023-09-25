@@ -4,26 +4,33 @@
 
 @layer components{
   
+  .themeBlackContact {
+    @apply bg-gradient-to-br from-zinc-900 to-zinc-800 mx-auto py-4 min-h-screen
+   }
+   .themeWhiteContact {
+     @apply bg-white mx-auto py-2 min-h-screen
+   }
+  
 .container-contact-light {
 
-  @apply bg-gradient-to-r from-white via-purple-300 flex flex-col items-center justify-center w-full p-4 mx-auto rounded-none sm:mt-4 md:mt-8 lg:mt-10 xl:mt-12 md:w-8/12 lg:w-6/12 xl:w-4/12 md:rounded-3xl md:p-14;
+  @apply flex flex-col items-center justify-center w-full p-4 mx-auto rounded-none bg-gradient-to-r from-white via-purple-300 sm:mt-4 md:mt-8 lg:mt-10 xl:mt-12 md:w-8/12 lg:w-6/12 xl:w-4/12 md:rounded-3xl md:p-14;
 
 }
 
 .container-contact-dark {
-  @apply bg-none flex flex-col items-center justify-center w-full p-4 mx-auto rounded-none sm:mt-4 md:mt-8 lg:mt-10 xl:mt-12 md:w-8/12 lg:w-6/12 xl:w-4/12 md:rounded-3xl md:p-14;
+  @apply flex flex-col items-center justify-center w-full p-4 mx-auto rounded-none bg-none sm:mt-4 md:mt-8 lg:mt-10 xl:mt-12 md:w-8/12 lg:w-6/12 xl:w-4/12 md:rounded-3xl md:p-14;
 
 }
 
 .input-contact-light {
 
-  @apply text-black px-4 py-2 mb-4 bg-purple-200 rounded-md outline-none appearance-none hover:border border-purple-500 placeholder:text-zinc-800;
+  @apply px-4 py-2 mb-4 text-black bg-purple-200 border-purple-500 rounded-md outline-none appearance-none hover:border placeholder:text-zinc-800;
 
 }
 
 .input-contact-dark {
 
-   @apply px-4 py-2 mb-4 text-white bg-gray-800 rounded-md outline-none appearance-none hover:border border-purple-500;
+   @apply px-6 py-4 mb-4 text-white bg-gray-800 border-purple-500 rounded-md outline-none appearance-none hover:border;
 }
 
 .textarea-dark {
@@ -34,7 +41,7 @@
 
 .textarea-white {
 
-  @apply text-black p-8 placeholder:text-zinc-800 bg-purple-200;
+  @apply p-8 text-black bg-purple-200 placeholder:text-zinc-800;
 
 
 }
