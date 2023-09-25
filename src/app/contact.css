@@ -5,7 +5,7 @@
 @layer components{
   
   .themeBlackContact {
-    @apply bg-gradient-to-br from-zinc-900 to-zinc-800 mx-auto py-4 min-h-screen
+    @apply bg-gradient-to-br from-zinc-900 to-zinc-800 mx-auto py-8 min-h-screen
    }
    .themeWhiteContact {
      @apply bg-white mx-auto py-2 min-h-screen
