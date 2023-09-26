@@ -10,15 +10,14 @@ import validator from 'validator';
 
 function Contact() {
   const theme = useContext(ThemeContext);
-  const [themeClasses, setThemeClasses] = useState('themeBlack');
+  const [themeClasses, setThemeClasses] = useState('themeBlackContact');
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
   const [message, setMessage] = useState('');
   const [h1Contact, seth1Contact] = useState('text-white');
-  const [boderCard, setBorderCard] = useState('border-l-4 border-white text-white');
   const [containerContact, setContainerContact] = useState('container-contact-dark');
   const [input, setInput] = useState('input-contact-dark');
-  const  [textArea, setTextArea] = useState('textarea-dark');
+  const [textArea, setTextArea] = useState('textarea-dark');
 
 
 
@@ -35,15 +34,15 @@ function Contact() {
       alert('Email inválido');
       return;
     }
-    if(message.length < 10){
+    if (message.length < 10) {
       alert('Mensagem muito curta');
       return;
     }
-    if(validator.isNumeric(name)){
+    if (validator.isNumeric(name)) {
       alert('Nome inválido');
       return;
     }
-    if(validator.isNumeric(message)){
+    if (validator.isNumeric(message)) {
       alert('Mensagem inválida');
       return;
     }
@@ -70,20 +69,14 @@ function Contact() {
   useEffect(() => {
     setThemeClasses(
       theme.color === 'light'
-        ? 'themeWhite'
-        : 'themeBlack'
+        ? 'themeWhiteContact'
+        : 'themeBlackContact'
     );
 
     seth1Contact(
       theme.color === 'light'
         ? 'text-black'
         : 'text-white'
-    );
-
-    setBorderCard(
-      theme.color === 'light'
-        ? 'border-l-4 border-black'
-        : 'border-l-4 border-white'
     );
 
     setContainerContact(
@@ -111,15 +104,15 @@ function Contact() {
       <Header />
       <div className={`${themeClasses}`}>
         <div
-         className={`${containerContact}`} 
-         style={{
-          boxShadow: '0px 0px 10px rgba(136, 35, 106, 0.774)',
-          padding: '0.4em',
-          borderRadius: '0.6em',
-          whiteSpace: 'nowrap'
-        }}
-         >
-          <h1 className={`mb-8 font-sans text-4xl font-bold md:mb-14 ${h1Contact}`}>Contato</h1>
+          className={`${containerContact}`}
+          style={{
+            boxShadow: '0px 0px 10px rgba(136, 35, 106, 0.774)',
+            padding: '0.4em',
+            borderRadius: '0.6em',
+            whiteSpace: 'nowrap'
+          }}
+        >
+          <h1 className={`mb-8 font-sans text-4xl font-bold md:mb-14 ${h1Contact}`}>Mensagem</h1>
           <form className="flex flex-col w-full max-w-600" onSubmit={sendEmail}>
             <input
               className={`${input}`}
@@ -141,12 +134,21 @@ function Contact() {
               onChange={(e) => setMessage(e.target.value)}
               value={message}
             />
-            <button className="text-base text-white transition transform duration-800 bg-purple-500 hover:bg-gradient-to-r from-[#4158D0] via-[#C850C0] via-46% to-[#FFCC70] to border-0 rounded-md cursor-pointer h-34 hover:scale-105"> Enviar mensagem</button>
+            <button className="text-base text-white transition transform duration-800 bg-purple-500 hover:bg-gradient-to-br from-fuchsia-950 via-fuchsia-500 via-45% to-cyan-500  to border-0 rounded-md cursor-pointer"> Enviar mensagem</button>
 
           </form>
-          <div className={`relative text-white bg-gray-800 w-48 h-20 p-4 mt-6 transition-transform cursor-pointer duration-800 hover:scale-125 hover:border-purple-500 hover:text-black rounded-xl hover:bg-gradient-to-r from-[#4158D0] via-[#C850C0] ${boderCard}`}>
-            <i className="absolute top-0 left-0 mt-4 text-xs">pablolandimdesa@gmail.com</i>
-            <i className="absolute left-0 text-xs top-10">(+55) 19 99628-6293</i>
+          <div className="flex flex-col gap-1">
+            <a href="/" className="flex items-center gap-1 p-1 border-purple-500 rounded-xl hover:text-blue-500">
+              <span className="w-4 h-4 xl:w-6 xl:h-6 bg-gradient-to-br from-fuchsia-950 via-fuchsia-500 via-45% to-cyan-500  rounded-full ">
+              </span>
+              <span className="transition-transform duration-300 border-about">Home
+              </span>
+            </a>
+            <a href="/projects" className="flex items-center gap-1 p-1 border-purple-500 rounded-xl hover:text-blue-500">
+              <span className="w-4 h-4 xl:w-6 xl:h-6 bg-gradient-to-br from-fuchsia-950 via-fuchsia-500 via-45% to-cyan-500 rounded-full"></span>
+              <span className="border-about">Meus Projetos</span>
+            </a>
+
           </div>
         </div>
       </div>

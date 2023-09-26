@@ -5,43 +5,43 @@
 @layer components{
   
   .themeBlackContact {
-    @apply bg-gradient-to-br from-zinc-900 to-zinc-800 mx-auto py-8 min-h-screen
+    @apply bg-gradient-to-br from-zinc-900 to-zinc-800
    }
    .themeWhiteContact {
-     @apply bg-white mx-auto py-2 min-h-screen
+     @apply bg-white 
    }
   
 .container-contact-light {
 
-  @apply flex flex-col items-center justify-center w-full p-4 mx-auto rounded-none bg-gradient-to-r from-white via-purple-300 sm:mt-4 md:mt-8 lg:mt-10 xl:mt-12 md:w-8/12 lg:w-6/12 xl:w-4/12 md:rounded-3xl md:p-14;
+  @apply bg-gradient-to-r from-white via-purple-300;
 
 }
 
 .container-contact-dark {
-  @apply flex flex-col items-center justify-center w-full p-4 mx-auto rounded-none bg-none sm:mt-4 md:mt-8 lg:mt-10 xl:mt-12 md:w-8/12 lg:w-6/12 xl:w-4/12 md:rounded-3xl md:p-14;
+  @apply bg-zinc-900;
 
 }
 
 .input-contact-light {
 
-  @apply px-4 py-2 mb-4 text-black bg-purple-200 border-purple-500 rounded-md outline-none appearance-none hover:border placeholder:text-zinc-800;
+  @apply w-full p-3 mb-4 border-0  rounded-lg md:text-xl text-black bg-purple-200 border-purple-500 outline-none appearance-none hover:border placeholder:text-zinc-800;
 
 }
 
 .input-contact-dark {
 
-   @apply px-6 py-4 mb-4 text-white bg-gray-800 border-purple-500 rounded-md outline-none appearance-none hover:border;
+   @apply w-full p-3 mb-4 border-0 rounded-lg md:text-xl text-white bg-zinc-800 border-purple-500 outline-none appearance-none hover:border;
 }
 
 .textarea-dark {
 
-  @apply p-8 text-white bg-gray-800;
+  @apply w-full p-3 mb-4 border-0 rounded-lg md:text-xl text-white bg-zinc-800 border-purple-500 hover:border ;
 
 }
 
 .textarea-white {
 
-  @apply p-8 text-black bg-purple-200 placeholder:text-zinc-800;
+  @apply w-full p-3 mb-4 border-0 rounded-lg md:text-xl border-purple-500 hover:border text-black bg-purple-200 placeholder:text-zinc-800;
 
 
 }
