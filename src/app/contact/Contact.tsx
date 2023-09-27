@@ -116,14 +116,7 @@ function Contact() {
             >
               <div className="flex flex-col w-full gap-1 p-3 mb-4 text-lg md:text-sm">
                 <div className={`rounded-lg p-4`}>
-                  <h2 className={`text-lg font-semibold ${h1Contact}`}>Contato</h2>
-                  <p className="flex items-center text-sm text-purple-800 md:text-lg">
-                    <MdEmail className="mr-2" />pablolandimdesa@gmail.com
-                  </p>
-                  <p className="flex items-center text-sm text-purple-800 md:text-lg">
-                    <BsFillTelephonePlusFill className="mr-2" /> (19)99628-6293
-                  </p>
-                  <a
+                <a
                     href="/"
                     className="flex items-center gap-1 p-1 border-purple-500 rounded-xl hover:text-blue-500"
                   >
@@ -137,7 +130,15 @@ function Contact() {
                     <span className="w-4 h-4 xl:w-6 xl:h-6 bg-gradient-to-br from-fuchsia-950 via-fuchsia-500 via-45% to-cyan-500 rounded-full"></span>
                     <span className="border-about">Meus Projetos</span>
                   </a>
-                </div>
+               
+                  <h2 className={`text-lg font-semibold ${h1Contact}`}>Contato</h2>
+                  <p className="flex items-center text-sm text-purple-800 md:text-lg">
+                    <MdEmail className="mr-2" />pablolandimdesa@gmail.com
+                  </p>
+                  <p className="flex items-center text-sm text-purple-800 md:text-lg">
+                    <BsFillTelephonePlusFill className="mr-2" /> (19)99628-6293
+                  </p>
+                  </div>
               </div>
               {/* <div className="flex text-center">
                <span className="text-sm">
