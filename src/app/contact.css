@@ -41,7 +41,7 @@
 
 .textarea-white {
 
-  @apply w-full p-3 mb-4 border-0 rounded-lg md:text-xl border-purple-500 hover:border text-black bg-purple-200 placeholder:text-zinc-800;
+  @apply w-full p-3 mb-4 border-0 rounded-lg md:text-xl border-purple-500 outline-none appearance-none hover:border text-black bg-purple-200 placeholder:text-zinc-800;
 
 
 }
