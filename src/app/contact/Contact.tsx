@@ -40,12 +40,8 @@ function Contact() {
       alert('Mensagem muito curta');
       return;
     }
-    if (validator.isNumeric(name)) {
+    if (name.length < 3) {
       alert('Nome inválido');
-      return;
-    }
-    if (validator.isNumeric(message)) {
-      alert('Mensagem inválida');
       return;
     }
     const templateParams = {
