@@ -8,6 +8,7 @@ import Image from "next/image";
 import ThemeContext from '../context/ThemeContext'
 import { useRef } from "react";
 import { useInView } from "framer-motion";
+import Carousel from './Carousel';
 
 function Section({ children } : any) {
   const ref = useRef(null);
@@ -105,7 +106,7 @@ function About() {
             </div>
             <div className='flex items-center justify-center h-full'>
             <Section> 
-              <p className={`sm:text-xs xl:text-2xl md:text-xl text-left ${themeAbout}`}>
+              <p className={`sm:text-xs xl:text-2xl md:text-xl text-justify ${themeAbout}`}>
                 Sou um desenvolvedor Full Stack, com paixão pelo design de  Front-end. Em agosto de 2022, realizei uma transição de carreira e me juntei à Trybe, onde através de projetos desafiadores e envolventes, tornei-me um especialista completo.
                 Minha jornada nesse universo de programação tem sido incrível, hoje me sinto capaz de criar interfaces de usuário que são não apenas atraentes, mas também responsivas e funcionais!!
               </p>
@@ -120,24 +121,7 @@ function About() {
             Tecnologias Essenciais
           </span>
 
-          <div className='flex gap-3'>
-            <a href="https://react.dev/" target="_blank" className="relative mb-3 font-sans text-lg text-blue-600 transition-transform duration-300 group hover:text-blue-400 hover:scale-125">
-              <FaReact className="mr-2 text-3xl sm:text-4xl xl:text-5xl" />
-              <span className="opacity-0 group-hover:opacity-100 absolute top-[-30px] left-0 bg-gradient-to-br from-fuchsia-950 via-fuchsia-500 via-45% to-cyan-500 text-white py-1 px-2 rounded-md">React</span>
-            </a>
-            <a href="https://tailwindcss.com/" target="_blank" className="relative mb-3 font-sans text-lg text-blue-600 transition-transform duration-300 group hover:text-blue-400 hover:scale-125" rel="noopener noreferrer">
-              <SiTailwindcss className="mr-2 text-3xl sm:text-4xl xl:text-5xl" />
-              <span className="opacity-0 group-hover:opacity-100 absolute top-[-30px] left-0 bg-gradient-to-br from-fuchsia-950 via-fuchsia-500 via-45% to-cyan-500 text-white py-1 px-2 rounded-md">Tailwind</span>
-            </a>
-            <a href="https://nextjs.org/docs" target="_blank" className="relative mb-3 font-sans text-lg text-blue-600 transition-transform duration-300 group hover:text-blue-400 hover:scale-125" rel="noopener noreferrer">
-              <TbBrandNextjs className="mr-2 text-3xl sm:text-4xl xl:text-5xl" />
-              <span className="opacity-0 group-hover:opacity-100 absolute top-[-30px] left-0 bg-gradient-to-br from-fuchsia-950 via-fuchsia-500 via-45% to-cyan-500 text-white py-1 px-2 rounded-md">Next.js</span>
-            </a>
-            <a href="https://www.figma.com/" target="_blank" className="relative mb-3 font-sans text-lg text-blue-600 transition-transform duration-300 group hover:text-blue-400 hover:scale-125" rel="noopener noreferrer">
-              <BiLogoFigma className="mr-2 text-3xl sm:text-4xl xl:text-5xl" />
-              <span className="opacity-0 top-[-30px]  group-hover:opacity-100 absolute left-0 bg-gradient-to-br from-fuchsia-950 via-fuchsia-500 via-45% to-cyan-500 text-white py-1 px-2 rounded-md">Figma</span>
-            </a>
-          </div>        
+          <Carousel />        
         </div>
         
       </section>

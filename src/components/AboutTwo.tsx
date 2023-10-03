@@ -105,7 +105,7 @@ function About() {
             </div>
             <div className='flex items-center justify-center h-full'>
             <Section> 
-              <p className={`sm:text-xs xl:text-2xl md:text-xl text-left ${themeAbout}`}>
+              <p className={`sm:text-xs xl:text-2xl md:text-xl text-justify ${themeAbout}`}>
                 Sou um desenvolvedor Full Stack, com paixão pelo design de  Front-end. Em agosto de 2022, realizei uma transição de carreira e me juntei à Trybe, onde através de projetos desafiadores e envolventes, tornei-me um especialista completo.
                 Minha jornada nesse universo de programação tem sido incrível, hoje me sinto capaz de criar interfaces de usuário que são não apenas atraentes, mas também responsivas e funcionais!!
               </p>
