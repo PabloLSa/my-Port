@@ -138,13 +138,13 @@ function Contact() {
                   <p className="flex items-center text-sm text-purple-800 md:text-lg">
                     <BsFillTelephonePlusFill className="mr-2" /> (19)99628-6293
                   </p>
+                  {/* <span className="flex text-sm text-purple-800">
+                No meu tempo, sem perder tempo que suas ideias se transformam
+               </span> */}
                   </div>
+               
               </div>
-              {/* <div className="flex text-center">
-               <span className="text-sm">
-                No meu tempo, sem perder tempo é onde tudo se transforma.
-               </span>
-              </div>  */}
+             
             </div>
           </div>
         </div>
