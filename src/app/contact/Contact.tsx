@@ -6,7 +6,7 @@ import ThemeContext from '../../context/ThemeContext'
 import emailjs from '@emailjs/browser';
 import validator from 'validator';
 import { MdEmail } from "react-icons/md";
-import { BsFillTelephonePlusFill } from "react-icons/bs";
+import { BsFillTelephonePlusFill, BsGithub, BsLinkedin } from "react-icons/bs";
 
 
 
@@ -103,6 +103,7 @@ function Contact() {
 
       <div className={`flex flex-col lg:flex-row ${themeClasses}`}>
         {/* Card de Contato */}
+
         <div className="p-5 lg:w-1/2">
           <div className="mt-10 mb-6 text-3xl text-left md:mt-20">
             <div
@@ -115,8 +116,11 @@ function Contact() {
               }}
             >
               <div className="flex flex-col w-full gap-1 p-3 mb-4 text-lg md:text-sm">
+
+
                 <div className={`rounded-lg p-4`}>
-                <a
+
+                  <a
                     href="/"
                     className="flex items-center gap-1 p-1 border-purple-500 rounded-xl hover:text-blue-500"
                   >
@@ -130,25 +134,23 @@ function Contact() {
                     <span className="w-4 h-4 xl:w-6 xl:h-6 bg-gradient-to-br from-fuchsia-950 via-fuchsia-500 via-45% to-cyan-500 rounded-full"></span>
                     <span className="border-about">Meus Projetos</span>
                   </a>
-               
+
+
                   <h2 className={`text-lg font-semibold ${h1Contact}`}>Contato</h2>
-                  <p className="flex items-center text-sm text-purple-800 md:text-lg">
+                  <p className="flex items-center text-sm text-purple-600 md:text-lg">
                     <MdEmail className="mr-2" />pablolandimdesa@gmail.com
                   </p>
-                  <p className="flex items-center text-sm text-purple-800 md:text-lg">
+                  <p className="flex items-center text-sm text-purple-600 md:text-lg">
                     <BsFillTelephonePlusFill className="mr-2" /> (19)99628-6293
                   </p>
-                  {/* <span className="flex text-sm text-purple-800">
-                No meu tempo, sem perder tempo que suas ideias se transformam
-               </span> */}
-                  </div>
-               
+
+                </div>
+
               </div>
-             
             </div>
           </div>
         </div>
-
+        
         {/* Formulário */}
         <div className="p-5 lg:w-1/2">
           <form className={`mb-6 text-3xl text-center rounded-lg ${containerContact}`}

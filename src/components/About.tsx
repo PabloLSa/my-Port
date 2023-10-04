@@ -1,9 +1,5 @@
 'use client'
-import { FaReact, FaDocker } from 'react-icons/fa';
-import { SiTailwindcss } from 'react-icons/si';
 import { useContext, useState, useEffect } from 'react';
-import { TbBrandNextjs } from 'react-icons/tb'
-import{ BiLogoFigma } from 'react-icons/bi'
 import Image from "next/image";
 import ThemeContext from '../context/ThemeContext'
 import { useRef } from "react";
