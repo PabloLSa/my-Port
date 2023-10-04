@@ -53,7 +53,7 @@ function About() {
 
   return (
     <>
-      <section className={`mx-auto py-8 min-h-screen ${themeClasses}`}>
+      <section className={`mx-auto mt-28 py-8 min-h-screen ${themeClasses}`}>
         <div className="container flex flex-col gap-3 px-4 mx-auto sm:flex-row-reverse">
           <div className="flex flex-col items-center w-full gap-4 sm:w-1/4">
             <div className="flex items-center justify-center mb-4 sm:w-32 sm:h-36 xl:w-64 xl:h-64 md:w-56 md:h-56">

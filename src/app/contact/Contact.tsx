@@ -101,11 +101,11 @@ function Contact() {
     <>
       <Header />
 
-      <div className={`flex flex-col lg:flex-row ${themeClasses}`}>
+      <div className={`flex mt-28 flex-col lg:flex-row ${themeClasses}`}>
         {/* Card de Contato */}
 
         <div className="p-5 lg:w-1/2">
-          <div className="mt-10 mb-6 text-3xl text-left md:mt-20">
+          <div className="mt-20 mb-6 text-3xl text-left md:mt-20">
             <div
               className={`flex flex-col max-w-xl m-auto lg:flex-row lg:flex-wrap ${containerContact}`}
               style={{
